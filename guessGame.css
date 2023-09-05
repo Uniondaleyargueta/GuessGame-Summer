@@ -1,0 +1,50 @@
+body{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: black;
+    color: rgb(255, 238, 142);
+}
+.title{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.intructions{
+    margin-top: 5px;
+    margin-bottom: 40px;
+   
+}
+.input-number{
+    background-color: rgb(161, 161, 161);
+    border: none;
+    padding: 10px 100px;
+    border-radius: 200px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.input-number::placeholder{
+    color: black;
+}
+.input-number:focus {
+    outline: none;
+}
+.score{
+    font-size: 20px;
+}
+.reset-button{ 
+    padding: 15px 50px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(233, 0, 0);
+    border-radius: 100px;
+    opacity: 1;
+    transition: opacity 0.20s;
+    cursor: pointer;
+}
+.reset-button:hover{
+    opacity: 0.5;
+}

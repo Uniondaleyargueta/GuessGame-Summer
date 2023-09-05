@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesss the Number</title>
+    <link rel="stylesheet" href="guessGame.css">
+</head>
+<body>
+    <p class="title">Guess the Number</p>
+    <p class="intructions">(Guess a number 1 - 10 and hit enter)</p>
+    <input type="text" placeholder="Guess the number" class="js-input-number input-number" onkeyup="
+        handleKeyUp(event);
+        
+    ">
+    <p class="js-result result"></p>
+    <p class="js-attempt attempt"></p>
+    <p class="js-score score"></p>
+    <button class="js-reset-score reset-button" onclick="
+    score = { 
+        correct: 0, 
+        incorrect: 0
+    }
+    updateScoreElement();
+    localStorage.removeItem('score')
+    ">Reset Score</button>
+
+    <script src="guessGame.js"></script>
+</body>
+</html>
